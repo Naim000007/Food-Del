@@ -1,0 +1,98 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.explore-menu-text-pyramid {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.explore-menu-text-pyramid .line {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.explore-menu-text-pyramid .line:nth-child(1) {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.explore-menu-text-pyramid .line:nth-child(2) {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.explore-menu h1 {
+    text-align: center;
+    color: #262626;
+    font-weight: 500;
+}
+
+.explore-menu-text {
+    /* max-width: 90%; */
+    /* border: 1px solid tomato; */
+    color: #606060;
+    text-align: center;
+    /* Slightly darker shade for better contrast */
+}
+
+.explore-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0;
+    overflow-x: auto;
+    /* Cross-browser support for horizontal scrolling */
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-menu-list img {
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    /* Smooth scaling transition */
+}
+
+
+.explore-menu-list-item p {
+    margin-top: 10px;
+    color: #505050;
+    /* Improved contrast */
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+}
+
+.explore-menu hr {
+    margin: 10px 0;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.explore-menu-list-item .active1 {
+    border: 4px solid tomato !important;
+    padding: 2px;
+}
+
+
+@media (max-width: 1050px) {
+    .explore-menu-text {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
